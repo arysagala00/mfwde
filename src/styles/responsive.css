@@ -1,0 +1,104 @@
+@media screen and (min-width: 800px) {
+    .nav .list-wrapper{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 300px){
+    .favorite{
+        width:44px;
+        height:44px;
+    }
+    #favoriteButtonContainer{
+        top: 31.5%;
+        right:1%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .nav {
+        z-index: 2;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav .list-wrapper .list-item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+        padding:0 25px;
+    }
+
+    .jumbotron{background-image: url("/images/heros/hero-image_4-small.jpg");}
+
+    .jumbotron .jumbotron-inner h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 501px){
+    .jumbotron{background-image: url("/images/heros/hero-image_4-medium.jpg");}
+}
+
+@media screen and (min-width: 500px) {
+    .menu-mobile{display: none;}
+    .restaurant-item, .restaurant-item.detail{width: 97%;}
+    .restaurant-item .card-img-top, .restaurant-item-detail .card-img-top{object-fit: cover;}
+    .jumbotron .jumbotron-inner h1{
+        font-size: 30px;
+    }
+    .favorite{
+        width:55px;
+        height:55px;
+    }
+    #favoriteButtonContainer{
+        top: 32%;
+        right:2%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .restaurant-item{
+        width: 46%;
+    }
+
+    .jumbotron .jumbotron-inner h1{
+        font-size: 42px;
+    }
+
+    #favoriteButtonContainer{
+        top: 35%;
+        right:2%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .restaurant-item{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main {
+        max-width: 1200px;
+    }
+    #favoriteButtonContainer{
+        top: 35%;
+        right:4%;
+    }
+}
